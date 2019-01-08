@@ -43,6 +43,9 @@
   transform: translateY(-2rem);
   opacity: 0;
   font-family: 'Default';
+}
+
+.text-intro__sub-title.load {
   animation: subTitle .7s linear .5s  forwards;
 }
 
