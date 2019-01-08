@@ -5,6 +5,11 @@
   padding: 0px;
 }
 
+@font-face {
+  src: url(../font/Montserrat-Regular.ttf);
+  font-family: 'Default';
+}
+
 .text-intro {
   width: 100%;
   height: 100vh;
@@ -14,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: black;
 }
 
@@ -21,18 +27,35 @@
 .text-intro__animated {
   color: white;
   font-family: monospace;
-  letter-spacing: 1.5em;
+  letter-spacing: 0.3em;
   font-size: 4rem;
   opacity: 0;
+  font-family: 'Default';
 }
 
 .text-intro__animated.load {
-  animation: text .4s linear forwards;
+  animation: text .7s forwards;
+}
+
+
+.text-intro__sub-title {
+  color: white;
+  transform: translateY(-2rem);
+  opacity: 0;
+  font-family: 'Default';
+  animation: subTitle .7s linear .5s  forwards;
 }
 
 @keyframes text {
   to {
     opacity: 1;
     letter-spacing: inherit;
+  }
+}
+
+@keyframes subTitle {
+  to {
+    opacity: 1;
+    transform: translateY(0px)
   }
 }
