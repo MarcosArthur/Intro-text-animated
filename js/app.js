@@ -1,7 +1,7 @@
 let text = document.querySelector('.text-intro__animated');
 let subTitle = document.querySelector('.text-intro__sub-title');
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('visibilitychange', () => {
      text.classList.add('load');
